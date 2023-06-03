@@ -163,10 +163,6 @@
     text-transform: uppercase
 }
 * {
-    scrollbar-width: auto;
-    scrollbar-color: #ff9ed7 #ffffff
-}
-* {
     scrollbar-width: thin;
     scrollbar-color: #ff9ed7 #ffffff;
 }
