@@ -235,12 +235,13 @@
 @media(max-width: 991px) {
   .header-nav {
     max-width: 960px;
-  }
-  .header-menu {
     display: none;
   }
 }
 @media(max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
   .header-burger-menu {
     display: flex;
   }
