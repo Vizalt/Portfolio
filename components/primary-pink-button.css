@@ -19,3 +19,11 @@
   cursor: pointer;
   transform: scale(1.02);
 }
+
+@media(max-width: 479px) {
+  .primary-pink-button-root-class-name {
+    width: auto;
+    height: auto;
+    align-self: stretch;
+  }
+}
