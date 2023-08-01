@@ -1,508 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Portfolio</title>
-    <link rel="icon" href="public/m.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="public/m.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Open Sans;
-        font-size: 1rem;
-      }
+<head>
+  <title>Portfolio</title>
+  <link rel="icon" href="public/m.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="public/m.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.625;
-        color: var(--dl-color-secondary-400);
-        background-color: var(--dl-color-gray-white);
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <style>
-      html * {
-          -webkit-font-smoothing: antialiased;
-      }
-      input::placeholder, textarea::placeholder {
-         color: #d2d6da;
-      }
-    </style>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./proyectos.css" rel="stylesheet" />
+    body {
+      margin: 0;
+    }
 
-      <div class="proyectos-container">
-        <div data-role="Header" class="header-header">
-          <nav class="header-nav">
-            <div class="header-container">
-              <a href="index.html" class="header-navlink Large">Portfolio</a>
-              <div class="header-menu">
-                <a href="index.html" class="header-navlink1 Large">Home</a>
-                <a href="profile.html" class="header-navlink2 Large">
-                  About me
-                </a>
-                <a href="proyectos.html" class="header-navlink3 Large">
-                  Projects
-                </a>
-              </div>
-              <div class="header-container1">
-                <div class="header-container2">
-                  <a href="form/index.html" class="header-navlink4">
-                    <div class="primary-pink-button-container">
-                      <button
-                        class="primary-pink-button-button button ButtonSmall"
-                      >
-                        <span>Contact Me</span>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div data-role="BurgerMenu" class="header-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="header-icon">
-                    <path
-                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div data-role="MobileMenu" class="header-mobile-menu">
-            <div class="header-top">
-              <a href="index.html" class="header-navlink5 Large">
-                Marina's Portfolio
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Open Sans;
+      font-size: 1rem;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.625;
+      color: var(--dl-color-secondary-400);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    data-tag="font" />
+  <style>
+    html * {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #d2d6da;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./proyectos.css" rel="stylesheet" />
+
+    <div class="proyectos-container">
+      <div data-role="Header" class="header-header">
+        <nav class="header-nav">
+          <div class="header-container">
+            <a href="index.html" class="header-navlink Large">Portfolio</a>
+            <div class="header-menu">
+              <a href="index.html" class="header-navlink1 Large">Home</a>
+              <a href="profile.html" class="header-navlink2 Large">
+                About me
               </a>
-              <div data-role="CloseMobileMenu" class="header-close-menu">
-                <svg viewBox="0 0 1024 1024" class="header-icon2">
-                  <path
-                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                  ></path>
+              <a href="proyectos.html" class="header-navlink3 Large">
+                Projects
+              </a>
+            </div>
+            <div class="header-container1">
+              <div class="header-container2">
+                <a href="form/index.html" class="header-navlink4">
+                  <div class="primary-pink-button-container">
+                    <button class="primary-pink-button-button button ButtonSmall">
+                      <span>Contact Me</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div data-role="BurgerMenu" class="header-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon">
+                  <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
               </div>
             </div>
-            <div class="header-mid">
-              <div class="header-menu1">
-                <a href="index.html" class="header-navlink6 Large">Home</a>
-                <a href="profile.html" class="header-link Large">About me</a>
-                <a href="proyectos.html" class="header-navlink7 Large">
-                  Projects
-                </a>
-              </div>
+          </div>
+        </nav>
+        <div data-role="MobileMenu" class="header-mobile-menu">
+          <div class="header-top">
+            <a href="index.html" class="header-navlink5 Large">
+              Marina's Portfolio
+            </a>
+            <div data-role="CloseMobileMenu" class="header-close-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon2">
+                <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                </path>
+              </svg>
             </div>
-            <div class="header-bot">
-              <a
-                href="form/index.html"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="header-link1"
-              >
-                <div class="primary-pink-button-container">
-                  <button class="primary-pink-button-button button ButtonSmall">
-                    <span>Contact Me</span>
-                  </button>
-                </div>
+          </div>
+          <div class="header-mid">
+            <div class="header-menu1">
+              <a href="index.html" class="header-navlink6 Large">Home</a>
+              <a href="profile.html" class="header-link Large">About me</a>
+              <a href="proyectos.html" class="header-navlink7 Large">
+                Projects
               </a>
             </div>
+          </div>
+          <div class="header-bot">
+            <a href="form/index.html" target="_blank" rel="noreferrer noopener" class="header-link1">
+              <div class="primary-pink-button-container">
+                <button class="primary-pink-button-button button ButtonSmall">
+                  <span>Contact Me</span>
+                </button>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="proyectos-blog-posts">
-          <div class="proyectos-container1">
-            <h1 class="proyectos-text">
-              <span>Videogames</span>
-              <br />
-            </h1>
-            <span class="proyectos-text03">
-              Here is a summary of the projects I have developed during my
-              university degree.
-            </span>
-          </div>
-          <div class="proyectos-container2">
-            <a
-              href="https://vizalt.github.io/MistEngine/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="Mist Engine"
-                  src="public/mistengine-200h.webp"
-                  class="blog-card-image"
-                />
-              </a>
-                <h5 class="blog-card-text"><span>Mist Engine</span></h5>
-                <span class="blog-card-text1">
-                  <span>
-                    Mist Engine is a 3D Game Engine that provides a wide variety
-                    of tools and features for its users.
-                  </span>
-                </span>
-              </div>
-            
-            <a
-              href="https://projectwastelanders.github.io/ProjectWastelanders/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link1"
-            >
-              <div class="blog-card2-container">
-                <img
-                  alt="Guardians of The Galaxy: The Bet"
-                  src="public/arena_thanos-200h.webp"
-                  class="blog-card2-image"
-                />
-              </a>
-                <h5 class="blog-card2-text">
-                  <span>Guardians of The Galaxy: The Bet</span>
-                </h5>
-                <span class="blog-card2-text1">
-                  <span>
-                    Top-Down Action Shooting game set in the Marvel Universe.
-                  </span>
-                </span>
-              </div>
-            
-            <a
-              href="https://divangus.github.io/Macacos/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link2"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="TMNT"
-                  src="public/teenmutantninjaturtles-200h.webp"
-                  class="blog-card-image"
-                />
-                <h5 class="blog-card-text">
-                  <span>Teen Mutant Ninja Turtles</span>
-                </h5>
-                <span class="blog-card-text1">
-                  <span>
-                    This game is a tribute to the original TMNT game, developed
-                    by Konami.
-                  </span>
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="proyectos-container3">
-            <a
-              href="https://dani-24.github.io/Project-RPG/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link3"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="So I Got Isekai'd"
-                  src="public/rpggame-200h.png"
-                  class="blog-card-image"
-                />
-              </a>
-                <h5 class="blog-card-text"><span>So I Got Isekai'd</span></h5>
-                <span class="blog-card-text1">
-                  <span>
-                    “So I Got Isekai’d By Truck-kun In A Fantasy World To Defeat
-                    Him At The Tower” is an RPG inspired by Isekai-themed anime.
-                  </span>
-                </span>
-              </div>
-            
-            <a
-              href="https://github.com/Xavierlm11/Assignment1"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link4"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="The legend of Kirbo"
-                  src="public/kirbo-200h.png"
-                  class="blog-card-image"
-                />
-              </a>
-                <h5 class="blog-card-text"><span>The Legend Of Kirbo</span></h5>
-                <span class="blog-card-text1">
-                  <span>Platformer game using Tiled.</span>
-                </span>
-              </div>
-            
-            <a
-              href="https://github.com/Xavierlm11/RacingKartProject"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link5"
-            >
-              <div class="blog-card3-container">
-                <img
-                  alt="RacingKart"
-                  src="public/suscar-200h.png"
-                  class="blog-card3-image"
-                />
-                <h5 class="blog-card3-text"><span>Suspicious Kart</span></h5>
-                <span class="blog-card3-text1">
-                  <span>Racing Kart game using Physics3D library.</span>
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="proyectos-container3">
-            <a
-              href="https://github.com/Vizalt/MobileFirebase"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link3"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="So I Got Isekai'd"
-                  src="public/marvelapi.webp"
-                  class="blog-card-image"
-                />
-              </a>
-                <h5 class="blog-card-text"><span>Marvel Comics API</span></h5>
-                <span class="blog-card-text1">
-                  <span>
-                    Flutter app that uses the Marvel Comics API. Displays all Marvel Comics and allows saving them in a list for future reading.
-                  </span>
-                </span>
-              </div>
-            
-            <a
-              href="https://github.com/Xavierlm11/Assignment1"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link4"
-            >
-              <div class="blog-card-container">
-                <img
-                  alt="The legend of Kirbo"
-                  src="public/kirbo-200h.png"
-                  class="blog-card-image"
-                />
-              </a>
-                <h5 class="blog-card-text"><span>The Legend Of Kirbo</span></h5>
-                <span class="blog-card-text1">
-                  <span>Platformer game using Tiled.</span>
-                </span>
-              </div>
-            
-            <a
-              href="https://github.com/Xavierlm11/RacingKartProject"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="proyectos-link5"
-            >
-              <div class="blog-card3-container">
-                <img
-                  alt="RacingKart"
-                  src="public/suscar-200h.png"
-                  class="blog-card3-image"
-                />
-              </a>
-                <h5 class="blog-card3-text"><span>Suspicious Kart</span></h5>
-                <span class="blog-card3-text1">
-                  <span>Racing Kart game using Physics3D library.</span>
-                </span>
-              </div>
-            
-          </div>
-          <div class="proyectos-container4">
-            <h1 class="proyectos-text04">
-              <span>Art</span>
-              <br />
-            </h1>
-            <span class="proyectos-text07">
-              <span>
-                Here is a summary of my art that I have developed during my
-                career, as well as independent projects. Some pieces are 2D
-                drawings, 3D modeling and other animations. Most of the 3D
-                modeling are projects that I developed on my own to improve my
-                skills both in modeling and with programs like Blender or Maya.
-              </span>
-              <br class="proyectos-text09" />
-            </span>
-          </div>
-          <div class="proyectos-container5">
-            <div class="blog-card1-container">
-              <img
-                alt="Room"
-                src="public/vixx-200h.png"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>Room</span></h5>
-              <span class="blog-card1-text1">
-                <span>Made it with Blender.</span>
-              </span>
-            </div>
-            <div class="blog-card1-container">
-              <img
-                alt="The Island"
-                src="public/vixx-200h.png"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>The Island</span></h5>
-              <span class="blog-card1-text1">
-                <span>Made it with Blender.</span>
-              </span>
-            </div>
-            <div class="blog-card1-container">
-              <img
-                alt="Little Dinosaur"
-                src="public/valmap-200h.webp"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>Little Dinosaur</span></h5>
-              <span class="blog-card1-text1">
-                <span>Made it with Blender.</span>
-              </span>
-            </div>
-          </div>
-          <div class="proyectos-container6">
-            <div class="blog-card1-container">
-              <img
-                alt="Vixx Bennet"
-                src="public/vixx-200h.png"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>Vixx Bennet</span></h5>
-              <span class="blog-card1-text1">
-                <span>
-                  This is my very first project I did developing a character
-                  from scratch for the conceptual art subject.
-                </span>
-              </span>
-            </div>
-            <div class="blog-card1-container">
-              <img
-                alt="image"
-                src="public/marinajump-300w.gif"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>Jump animation</span></h5>
-              <span class="blog-card1-text1">
-                <span>Created in Toon Boom Harmony.</span>
-              </span>
-            </div>
-            <div class="blog-card1-container">
-              <img
-                alt="San Vincenzo"
-                src="public/valmap-200h.webp"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>San Vincenzo</span></h5>
-              <span class="blog-card1-text1">
-                <span>
-                  This is a 3D scenario as a new map for the Valorant.
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="proyectos-container6">
-            <a
-            href="https://github.com/Xavierlm11/RacingKartProject"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="proyectos-link5"
-          >
-            <div class="blog-card1-container">
-              <img
-                alt="Vixx Bennet"
-                src="public/CombatGif.gif"
-                class="blog-card1-image"
-              />
-            </a>
-              <h5 class="blog-card1-text"><span>Combat Animation</span></h5>
-              <span class="blog-card1-text1">
-                <span>
-                  These combat animations were created for further use in a 2vs2 combat unity game.
-                </span>
-              </span>
-            
-            </div>
-            <a
-            href="https://github.com/Xavierlm11/RacingKartProject"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="proyectos-link5"
-          >
-            <div class="blog-card1-container">
-              <img
-                alt="image"
-                src="public/sceneaudio.webp"
-                class="blog-card1-image"
-              />
-            </a>
-              <h5 class="blog-card1-text"><span>Unity audio scene</span></h5>
-              <span class="blog-card1-text1">
-                <span>Unity scene with audio for the Digital Audio subject.</span>
-              </span>
-            </div>
-            <div class="blog-card1-container">
-              <img
-                alt="San Vincenzo"
-                src="public/valmap-200h.webp"
-                class="blog-card1-image"
-              />
-              <h5 class="blog-card1-text"><span>San Vincenzo</span></h5>
-              <span class="blog-card1-text1">
-                <span>
-                  This is a 3D scenario as a new map for the Valorant.
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <section class="proyectos-testimonials">
-          <div class="proyectos-container7">
-          </div>
-          <img
-            alt="image"
-            src="public/bottom.svg"
-            class="proyectos-bottom-wave-image"
-          />
-          <img
-            alt="image"
-            src="public/waves-white.svg"
-            class="proyectos-image"
-          />
-          <img
-            alt="image"
-            src="public/top.svg"
-            class="proyectos-top-wave-image"
-          />
-        </section>
-        <footer class="footer-footer">
-          <div class="footer-container">
-            <h1 class="footer-text"><span>The cake is a lie 🎂</span></h1>
-          </div>
-          <img alt="image" src="public/waves-white.svg" class="footer-image" />
-        </footer>
       </div>
+      <div class="proyectos-blog-posts">
+        <div class="proyectos-container1">
+          <h1 class="proyectos-text">
+            <span>Videogames</span>
+            <br />
+          </h1>
+          <span class="proyectos-text03">
+            Here is a summary of the projects I have participated in during my university degree.
+          </span>
+        </div>
+        <div class="proyectos-container2">
+          <a href="https://vizalt.github.io/MistEngine/" target="_blank" rel="noreferrer noopener"
+            class="proyectos-link">
+            <div class="blog-card-container">
+              <img alt="Mist Engine" src="public/mistengine-200h.webp" class="blog-card-image" />
+          </a>
+          <h5 class="blog-card-text"><span>Mist Engine</span></h5>
+          <span class="blog-card-text1">
+            <span>
+              Mist Engine is a 3D Game Engine that provides a wide variety
+              of tools and features for its users.
+            </span>
+          </span>
+        </div>
+
+        <a href="https://projectwastelanders.github.io/ProjectWastelanders/" target="_blank" rel="noreferrer noopener"
+          class="proyectos-link1">
+          <div class="blog-card2-container">
+            <img alt="Guardians of The Galaxy: The Bet" src="public/arena_thanos-200h.webp" class="blog-card2-image" />
+        </a>
+        <h5 class="blog-card2-text">
+          <span>Guardians of The Galaxy: The Bet</span>
+        </h5>
+        <span class="blog-card2-text1">
+          <span>
+            Top-Down Action Shooting game set in the Marvel Universe.
+          </span>
+        </span>
+      </div>
+
+      <a href="https://divangus.github.io/Macacos/" target="_blank" rel="noreferrer noopener" class="proyectos-link2">
+        <div class="blog-card-container">
+          <img alt="TMNT" src="public/teenmutantninjaturtles-200h.webp" class="blog-card-image" />
+          <h5 class="blog-card-text">
+            <span>Teen Mutant Ninja Turtles</span>
+          </h5>
+          <span class="blog-card-text1">
+            <span>
+              This game is a tribute to the original TMNT game, developed
+              by Konami.
+            </span>
+          </span>
+        </div>
+      </a>
     </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-  </body>
+    <div class="proyectos-container3">
+      <a href="https://dani-24.github.io/Project-RPG/" target="_blank" rel="noreferrer noopener"
+        class="proyectos-link3">
+        <div class="blog-card-container">
+          <img alt="So I Got Isekai'd" src="public/rpggame-200h.png" class="blog-card-image" />
+      </a>
+      <h5 class="blog-card-text"><span>So I Got Isekai'd</span></h5>
+      <span class="blog-card-text1">
+        <span>
+          “So I Got Isekai’d By Truck-kun In A Fantasy World To Defeat
+          Him At The Tower” is an RPG inspired by Isekai-themed anime.
+        </span>
+      </span>
+    </div>
+
+    <a href="https://github.com/Xavierlm11/Assignment1" target="_blank" rel="noreferrer noopener"
+      class="proyectos-link4">
+      <div class="blog-card-container">
+        <img alt="The legend of Kirbo" src="public/kirbo-200h.png" class="blog-card-image" />
+    </a>
+    <h5 class="blog-card-text"><span>The Legend Of Kirbo</span></h5>
+    <span class="blog-card-text1">
+      <span>Platformer game using Tiled.</span>
+    </span>
+  </div>
+
+  <a href="https://github.com/Xavierlm11/RacingKartProject" target="_blank" rel="noreferrer noopener"
+    class="proyectos-link5">
+    <div class="blog-card3-container">
+      <img alt="RacingKart" src="public/suscar-200h.png" class="blog-card3-image" />
+      <h5 class="blog-card3-text"><span>Suspicious Kart</span></h5>
+      <span class="blog-card3-text1">
+        <span>Racing Kart game using Physics3D library.</span>
+      </span>
+    </div>
+  </a>
+  </div>
+  <div class="proyectos-container3">
+    <a href="https://github.com/Vizalt/MobileFirebase" target="_blank" rel="noreferrer noopener"
+      class="proyectos-link3">
+      <div class="blog-card-container">
+        <img alt="So I Got Isekai'd" src="public/marvelapi.webp" class="blog-card-image" />
+    </a>
+    <h5 class="blog-card-text"><span>Marvel Comics API</span></h5>
+    <span class="blog-card-text1">
+      <span>
+        Flutter app that uses the Marvel Comics API. Displays all Marvel Comics and allows saving them in a list for
+        future reading.
+      </span>
+    </span>
+  </div>
+
+  <a href="https://github.com/bielrabasa/VR_Potion_Alchemist" target="_blank" rel="noreferrer noopener"
+    class="proyectos-link4">
+    <div class="blog-card-container">
+      <img alt="VR Potion Alchemist" src="public/VRAlchemist.png" class="blog-card-image" />
+  </a>
+  <h5 class="blog-card-text"><span>VR Potion Alchemist</span></h5>
+  <span class="blog-card-text1">
+    <span>A prototype game of an VR alchemist game.</span>
+  </span>
+  </div>
+
+  <a href="" target="_blank" rel="noreferrer noopener"
+    class="proyectos-link5">
+    <div class="blog-card3-container">
+      <img alt="Coming Soon..." src="public/White.png" class="blog-card3-image" />
+  </a>
+  <h5 class="blog-card3-text"><span>Coming Soon...</span></h5>
+  <span class="blog-card3-text1">
+    <span></span>
+  </span>
+  </div>
+
+  </div>
+  <div class="proyectos-container4">
+    <h1 class="proyectos-text04">
+      <span>Art</span>
+      <br />
+    </h1>
+    <span class="proyectos-text07">
+      <span>
+        Here is a summary of my art that I have developed during my
+        career, as well as independent projects. Some pieces are 2D
+        drawings, 3D modeling and other animations. Most of the 3D
+        modeling are projects that I developed on my own to improve my
+        skills both in modeling and with programs like Blender or Maya.
+      </span>
+      <br class="proyectos-text09" />
+    </span>
+  </div>
+  <div class="proyectos-container5">
+    <a href="https://www.artstation.com/artwork/ao1meX" target="_blank" rel="noreferrer noopener"
+      class="proyectos-link5">
+      <div class="blog-card1-container">
+        <img alt="3D Keyboard" src="public/3DKeyboard.png" class="blog-card1-image" />
+    </a>
+    <h5 class="blog-card1-text"><span>Room</span></h5>
+    <span class="blog-card1-text1">
+      <span>Made it with Blender.</span>
+    </span>
+  </div>
+    <a href="https://www.artstation.com/artwork/kQaq50" target="_blank" rel="noreferrer noopener"
+      class="proyectos-link5">
+      <div class="blog-card1-container">
+        <img alt="Island" src="public/Island.png" class="blog-card1-image" />
+    </a>
+    <h5 class="blog-card1-text"><span>The Island</span></h5>
+    <span class="blog-card1-text1">
+      <span>Made it with Blender.</span>
+    </span>
+  </div>
+  <a href="https://github.com/Vizalt/SoundSceneUnity" target="_blank" rel="noreferrer noopener"
+    class="proyectos-link5">
+    <div class="blog-card1-container">
+      <img alt="image" src="public/sceneaudio.webp" class="blog-card1-image" />
+  </a>
+  <h5 class="blog-card1-text"><span>Unity audio scene</span></h5>
+  <span class="blog-card1-text1">
+    <span>Unity scene with audio for the Digital Audio subject.</span>
+  </span>
+  </div>
+  </div>
+  <div class="proyectos-container6">
+    <div class="blog-card1-container">
+      <img alt="Vixx Bennet" src="public/vixx-200h.png" class="blog-card1-image" />
+      <h5 class="blog-card1-text"><span>Vixx Bennet</span></h5>
+      <span class="blog-card1-text1">
+        <span>
+          This is my very first project I did developing a character
+          from scratch for the conceptual art subject.
+        </span>
+      </span>
+    </div>
+    <div class="blog-card1-container">
+      <img alt="image" src="public/marinajump-300w.gif" class="blog-card1-image" />
+      <h5 class="blog-card1-text"><span>Jump animation</span></h5>
+      <span class="blog-card1-text1">
+        <span>Created in Toon Boom Harmony.</span>
+      </span>
+    </div>
+    <div class="blog-card1-container">
+      <img alt="San Vincenzo" src="public/valmap-200h.webp" class="blog-card1-image" />
+      <h5 class="blog-card1-text"><span>San Vincenzo</span></h5>
+      <span class="blog-card1-text1">
+        <span>
+          This is a 3D scenario as a new map for the Valorant.
+        </span>
+      </span>
+    </div>
+  </div>
+  <div class="proyectos-container6">
+    <a href="https://github.com/Xavierlm11/RacingKartProject" target="_blank" rel="noreferrer noopener"
+      class="proyectos-link5">
+      <div class="blog-card1-container">
+        <img alt="Vixx Bennet" src="public/CombatGif.gif" class="blog-card1-image" />
+    </a>
+    <h5 class="blog-card1-text"><span>Combat Animation</span></h5>
+    <span class="blog-card1-text1">
+      <span>
+        These combat animations were created for further use in a 2vs2 combat unity game.
+      </span>
+    </span>
+  </div>
+  <a href="" target="_blank" rel="noreferrer noopener"
+    class="proyectos-link5">
+    <div class="blog-card1-container">
+      <img alt="image" src="public/White.png" class="blog-card1-image" />
+  </a>
+  <h5 class="blog-card1-text"><span>Coming Soon...</span></h5>
+  <span class="blog-card1-text1">
+    <span></span>
+  </span>
+  </div>
+  <div class="blog-card1-container">
+    <img alt="Coming Soon..." src="public/White.png" class="blog-card1-image" />
+    <h5 class="blog-card1-text"><span>Coming Soon...</span></h5>
+    <span class="blog-card1-text1">
+      <span>
+        
+      </span>
+    </span>
+  </div>
+  </div>
+  </div>
+  <section class="proyectos-testimonials">
+    <div class="proyectos-container7">
+    </div>
+    <img alt="image" src="public/bottom.svg" class="proyectos-bottom-wave-image" />
+    <img alt="image" src="public/waves-white.svg" class="proyectos-image" />
+    <img alt="image" src="public/top.svg" class="proyectos-top-wave-image" />
+  </section>
+  <footer class="footer-footer">
+    <div class="footer-container">
+      <h1 class="footer-text"><span>The cake is a lie 🎂</span></h1>
+    </div>
+    <img alt="image" src="public/waves-white.svg" class="footer-image" />
+  </footer>
+  </div>
+  </div>
+  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
 </html>
