@@ -1,288 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Portfolio</title>
-    <link rel="icon" href="public/m.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="public/m.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-<!-- Creditos a pixeljeff por la imagene--> 
-<!-- https://www.deviantart.com/pixeljeff/art/Alley-880674198 --> 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Open Sans;
-        font-size: 1rem;
-      }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.625;
-        color: var(--dl-color-secondary-400);
-        background-color: var(--dl-color-gray-white);
+<head>
+  <title>Portfolio</title>
+  <link rel="icon" href="public/m.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="public/m.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- Creditos a pixeljeff por la imagene-->
+  <!-- https://www.deviantart.com/pixeljeff/art/Alley-880674198 -->
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <style>
-      html * {
-          -webkit-font-smoothing: antialiased;
-      }
-      input::placeholder, textarea::placeholder {
-         color: #d2d6da;
-      }
-    </style>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./home.css" rel="stylesheet" />
+    body {
+      margin: 0;
+    }
 
-      <div class="home-container">
-        <div data-role="Header" class="header-header">
-          <nav class="header-nav">
-            <div class="header-container">
-              <a href="index.html" class="header-navlink Large">Portfolio</a>
-              <div class="header-menu">
-                <a href="index.html" class="header-navlink1 Large">Home</a>
-                <a href="profile.html" class="header-navlink2 Large">
-                  About me
-                </a>
-                <a href="proyectos.html" class="header-navlink3 Large">
-                  Projects
-                </a>
-              </div>
-              <div class="header-container1">
-                <div class="header-container2">
-                  <a href="form/index.html" class="header-navlink4">
-                    <div class="primary-pink-button-container">
-                      <button
-                        class="primary-pink-button-button button ButtonSmall"
-                      >
-                        <span>Contact Me</span>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div data-role="BurgerMenu" class="header-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="header-icon">
-                    <path
-                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div data-role="MobileMenu" class="header-mobile-menu">
-            <div class="header-top">
-              <a href="index.html" class="header-navlink5 Large">
-                Marina's Portfolio
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Open Sans;
+      font-size: 1rem;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.625;
+      color: var(--dl-color-secondary-400);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    data-tag="font" />
+  <style>
+    html * {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #d2d6da;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <div data-role="Header" class="header-header">
+        <nav class="header-nav">
+          <div class="header-container">
+            <a href="index.html" class="header-navlink Large">Portfolio</a>
+            <div class="header-menu">
+              <a href="index.html" class="header-navlink1 Large">Home</a>
+              <a href="profile.html" class="header-navlink2 Large">
+                About me
               </a>
-              <div data-role="CloseMobileMenu" class="header-close-menu">
-                <svg viewBox="0 0 1024 1024" class="header-icon2">
-                  <path
-                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                  ></path>
+              <a href="proyectos.html" class="header-navlink3 Large">
+                Projects
+              </a>
+            </div>
+            <div class="header-container1">
+              <div class="header-container2">
+                <a href="form/index.html" class="header-navlink4">
+                  <div class="primary-pink-button-container">
+                    <button class="primary-pink-button-button button ButtonSmall">
+                      <span>Contact Me</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div data-role="BurgerMenu" class="header-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon">
+                  <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
               </div>
             </div>
-            <div class="header-mid">
-              <div class="header-menu1">
-                <a href="index.html" class="header-navlink6 Large">Home</a>
-                <a href="profile.html" class="header-link Large">About me</a>
-                <a href="proyectos.html" class="header-navlink7 Large">
-                  Projects
+          </div>
+        </nav>
+        <div data-role="MobileMenu" class="header-mobile-menu">
+          <div class="header-top">
+            <a href="index.html" class="header-navlink5 Large">
+              Marina's Portfolio
+            </a>
+            <div data-role="CloseMobileMenu" class="header-close-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon2">
+                <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div class="header-mid">
+            <div class="header-menu1">
+              <a href="index.html" class="header-navlink6 Large">Home</a>
+              <a href="profile.html" class="header-link Large">About me</a>
+              <a href="proyectos.html" class="header-navlink7 Large">
+                Projects
+              </a>
+            </div>
+          </div>
+          <div class="header-bot">
+            <a href="form/index.html" target="_blank" rel="noreferrer noopener" class="header-link1">
+              <div class="primary-pink-button-container">
+                <button class="primary-pink-button-button button ButtonSmall">
+                  <span>Contact Me</span>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-hero">
+        <div class="home-container1">
+          <div class="home-card">
+            <h1 class="home-text HeadingOne">Marina Albalà</h1>
+            <h1 class="home-text01">3D Artist</h1>
+            <div class="home-container2">
+              <div class="home-container3">
+                <a href="https://github.com/Vizalt" target="_blank" rel="noreferrer noopener" class="home-link">
+                  <div class="primary-pink-button-container">
+                    <button class="primary-pink-button-button button ButtonSmall">
+                      <span>GitHub</span>
+                    </button>
+                  </div>
                 </a>
               </div>
-            </div>
-            <div class="header-bot">
-              <a
-                href="form/index.html"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="header-link1"
-              >
-                <div class="primary-pink-button-container">
-                  <button class="primary-pink-button-button button ButtonSmall">
-                    <span>Contact Me</span>
+              <a href="profile.html" class="home-navlink">
+                <div class="outline-gray-button-container">
+                  <button class="outline-gray-button-button button ButtonSmall">
+                    <span>about me</span>
                   </button>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="home-hero">
-          <div class="home-container1">
-            <div class="home-card">
-              <h1 class="home-text HeadingOne">Marina Albalà</h1>
-              <h1 class="home-text01">Game Developer</h1>
-              <div class="home-container2">
-                <div class="home-container3">
-                  <a
-                    href="https://github.com/Vizalt"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link"
-                  >
-                    <div class="primary-pink-button-container">
-                      <button
-                        class="primary-pink-button-button button ButtonSmall"
-                      >
-                        <span>GitHub</span>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <a href="profile.html" class="home-navlink">
-                  <div class="outline-gray-button-container">
-                    <button
-                      class="outline-gray-button-button button ButtonSmall"
-                    >
-                      <span>about me</span>
-                    </button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img alt="image" src="public/pixel-1500h.gif" class="home-image" />
-        <h1 class="home-text05">Skills</h1>
-        <section class="home-features">
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/cube1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree">
-              <span>Programming</span>
-            </h5>
-            <span class="feature-card-text1">
-              <span>Wide experience in developing games in C++ and Unity</span>
-            </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/rocket1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
-            <span class="feature-card-text1">
-              <span>Experience in designing videogames</span>
-            </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/rocket1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree">
-              <span>3D Modeling</span>
-            </h5>
-            <span class="feature-card-text1">
-              <span>Knowledge in 3D modeling specially in Blender</span>
-            </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/cube1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree">
-              <span>Animation</span>
-            </h5>
-            <span class="feature-card-text1">
-              <span>
-                Experience in animating character movements both in 3D and 2D
-              </span>
-            </span>
-          </div>
-        </section>
-        <div class="home-container4">
-          <div class="home-container5">
-            <h1 class="home-text06">Software Proficiency</h1>
-          </div>
-          <div class="home-container6">
-            <span class="home-text07">
-              <span>Maya</span>
-              <br />
-              <br />
-              <span>Blender</span>
-              <br />
-              <br />
-              <span>Substance Painter</span>
-              <br />
-              <br />
-              <span>Figma</span>
-              <br />
-              <br />
-              <span>Photoshop</span>
-              <br />
-              <br />
-              <span>Illustrator</span>
-              <br />
-            </span>
-            <span class="home-text25">
-              <span class="home-text26">Visual Studio</span>
-              <br class="home-text27" />
-              <br class="home-text28" />
-              <span class="home-text29">Unity</span>
-              <br class="home-text30" />
-              <br class="home-text31" />
-              <span class="home-text32">Unreal Engine</span>
-              <br class="home-text33" />
-              <br class="home-text34" />
-              <span class="home-text35">Tiled</span>
-              <br class="home-text36" />
-              <br class="home-text37" />
-              <span class="home-text38">Toon Boom Harmony</span>
-              <br class="home-text39" />
-              <br class="home-text40" />
-              <span class="home-text41">Houdini</span>
-              <span class="home-text42">&nbsp;</span>
-              <br />
-            </span>
-          </div>
-        </div>
-        <section class="home-testimonials">
-          <div class="home-container7"></div>
-          <img
-            alt="image"
-            src="public/bottom.svg"
-            class="home-bottom-wave-image"
-          />
-          <img alt="image" src="public/waves-white.svg" class="home-image1" />
-          <img alt="image" src="public/top.svg" class="home-top-wave-image" />
-        </section>
-        <footer class="footer-footer">
-          <div class="footer-container">
-            <h1 class="footer-text"><span>The cake is a lie 🎂</span></h1>
-          </div>
-          <img alt="image" src="public/waves-white.svg" class="footer-image" />
-        </footer>
       </div>
+      <img alt="image" src="public/pixel-1500h.gif" class="home-image" />
+      <h1 class="home-text05">Skills</h1>
+      <section class="home-features">
+        <div class="feature-card-container">
+          <img alt="image" src="public/cube1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree">
+            <span>Programming</span>
+          </h5>
+          <span class="feature-card-text1">
+            <span>Wide experience in developing games in C++ and Unity</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/rocket1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+          <span class="feature-card-text1">
+            <span>Experience in designing videogames</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/rocket1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree">
+            <span>3D Modeling</span>
+          </h5>
+          <span class="feature-card-text1">
+            <span>Knowledge in 3D modeling specially in Blender</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/cube1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree">
+            <span>Animation</span>
+          </h5>
+          <span class="feature-card-text1">
+            <span>
+              Experience in animating character movements both in 3D and 2D
+            </span>
+          </span>
+        </div>
+      </section>
+      <div class="home-container4">
+        <div class="home-container5">
+          <h1 class="home-text06">Software Proficiency</h1>
+        </div>
+        <div class="home-container6">
+          <span class="home-text07">
+            <span>Maya</span>
+            <br />
+            <br />
+            <span>Blender</span>
+            <br />
+            <br />
+            <span>Substance Painter</span>
+            <br />
+            <br />
+            <span>Figma</span>
+            <br />
+            <br />
+            <span>Photoshop</span>
+            <br />
+            <br />
+            <span>Illustrator</span>
+            <br />
+          </span>
+          <span class="home-text25">
+            <span class="home-text26">Visual Studio</span>
+            <br class="home-text27" />
+            <br class="home-text28" />
+            <span class="home-text29">Unity</span>
+            <br class="home-text30" />
+            <br class="home-text31" />
+            <span class="home-text32">Unreal Engine</span>
+            <br class="home-text33" />
+            <br class="home-text34" />
+            <span class="home-text35">Tiled</span>
+            <br class="home-text36" />
+            <br class="home-text37" />
+            <span class="home-text38">Toon Boom Harmony</span>
+            <br class="home-text39" />
+            <br class="home-text40" />
+            <span class="home-text41">Houdini</span>
+            <span class="home-text42">&nbsp;</span>
+            <br />
+          </span>
+        </div>
+      </div>
+      <section class="home-testimonials">
+        <div class="home-container7"></div>
+        <img alt="image" src="public/bottom.svg" class="home-bottom-wave-image" />
+        <img alt="image" src="public/waves-white.svg" class="home-image1" />
+        <img alt="image" src="public/top.svg" class="home-top-wave-image" />
+      </section>
+      <footer class="footer-footer">
+        <div class="footer-container">
+          <h1 class="footer-text"><span>The cake is a lie 🎂</span></h1>
+        </div>
+        <img alt="image" src="public/waves-white.svg" class="footer-image" />
+      </footer>
     </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-  </body>
+  </div>
+  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
 </html>
